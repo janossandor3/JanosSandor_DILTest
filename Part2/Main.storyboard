@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ghost Draw View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GhostDrawViewController" customModule="Part2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H7g-qC-BG3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6g3-d0-2u4">
+                                <rect key="frame" x="0.0" y="0.0" width="414.66666666666669" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7l-Xy-RRC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414.66666666666669" height="687"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c67-NF-2gf">
+                                        <rect key="frame" x="0.0" y="687" width="414.66666666666669" height="5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="b8I-ZZ-v2B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1X3-Rq-6c5">
+                                        <rect key="frame" x="0.0" y="692" width="414.66666666666669" height="160"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2bn-Mn-XFl">
+                                                <rect key="frame" x="20" y="20" width="374.66666666666669" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gh-yb-HNR" userLabel="RedButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="6b2-Ui-JHD"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fx7-47-f4J" userLabel="GreenButton">
+                                                        <rect key="frame" x="98.666666666666657" y="0.0" width="78.666666666666657" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="orp-jB-7wV" userLabel="BlueButton">
+                                                        <rect key="frame" x="197.33333333333334" y="0.0" width="78.666666666666657" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="y6g-7L-6WB" userLabel="EraserButton">
+                                                        <rect key="frame" x="296" y="0.0" width="78.666666666666686" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="wLh-Ge-qBP"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2bn-Mn-XFl" secondAttribute="bottom" constant="40" id="HM0-7L-glK"/>
+                                            <constraint firstItem="2bn-Mn-XFl" firstAttribute="leading" secondItem="1X3-Rq-6c5" secondAttribute="leading" constant="20" id="Ufh-0L-8vv"/>
+                                            <constraint firstAttribute="trailing" secondItem="2bn-Mn-XFl" secondAttribute="trailing" constant="20" id="Wpl-te-W6m"/>
+                                            <constraint firstItem="2bn-Mn-XFl" firstAttribute="top" secondItem="1X3-Rq-6c5" secondAttribute="top" constant="20" id="XIo-Sf-47A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="F7h-Xf-ftx"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1X3-Rq-6c5" firstAttribute="leading" secondItem="6g3-d0-2u4" secondAttribute="leading" id="4Na-XG-ROI"/>
+                                    <constraint firstItem="1X3-Rq-6c5" firstAttribute="bottom" secondItem="6g3-d0-2u4" secondAttribute="bottom" id="57O-p1-kTe"/>
+                                    <constraint firstItem="c7l-Xy-RRC" firstAttribute="top" secondItem="6g3-d0-2u4" secondAttribute="top" id="5sd-63-XwD"/>
+                                    <constraint firstItem="c67-NF-2gf" firstAttribute="leading" secondItem="6g3-d0-2u4" secondAttribute="leading" id="QYl-pY-WOp"/>
+                                    <constraint firstAttribute="trailing" secondItem="c7l-Xy-RRC" secondAttribute="trailing" id="Sjh-02-0qf"/>
+                                    <constraint firstItem="1X3-Rq-6c5" firstAttribute="trailing" secondItem="6g3-d0-2u4" secondAttribute="trailing" id="Umc-K6-IMf"/>
+                                    <constraint firstItem="c67-NF-2gf" firstAttribute="trailing" secondItem="6g3-d0-2u4" secondAttribute="trailing" id="brQ-zf-dnL"/>
+                                    <constraint firstItem="c67-NF-2gf" firstAttribute="top" secondItem="c7l-Xy-RRC" secondAttribute="bottom" id="eLD-kJ-Il3"/>
+                                    <constraint firstItem="1X3-Rq-6c5" firstAttribute="top" secondItem="c67-NF-2gf" secondAttribute="bottom" id="ijO-g9-WEb"/>
+                                    <constraint firstItem="c7l-Xy-RRC" firstAttribute="leading" secondItem="6g3-d0-2u4" secondAttribute="leading" id="ofE-y1-die"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6g3-d0-2u4" firstAttribute="leading" secondItem="H7g-qC-BG3" secondAttribute="leading" id="4rJ-bU-ckH"/>
+                            <constraint firstItem="6g3-d0-2u4" firstAttribute="centerY" secondItem="H7g-qC-BG3" secondAttribute="centerY" id="7PA-wy-jGi"/>
+                            <constraint firstItem="6g3-d0-2u4" firstAttribute="centerX" secondItem="H7g-qC-BG3" secondAttribute="centerX" id="N2h-Kb-eb5"/>
+                            <constraint firstItem="6g3-d0-2u4" firstAttribute="top" secondItem="H7g-qC-BG3" secondAttribute="top" id="UGu-LB-clb"/>
+                            <constraint firstAttribute="trailing" secondItem="6g3-d0-2u4" secondAttribute="trailing" id="d9q-WU-xI7"/>
+                            <constraint firstAttribute="bottom" secondItem="6g3-d0-2u4" secondAttribute="bottom" id="e2X-jf-sQr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueButton" destination="orp-jB-7wV" id="gP0-2E-5A6"/>
+                        <outlet property="drawingView" destination="c7l-Xy-RRC" id="bMV-31-c6a"/>
+                        <outlet property="eraserButton" destination="y6g-7L-6WB" id="p0I-Mp-P5v"/>
+                        <outlet property="greenButton" destination="fx7-47-f4J" id="uei-dg-b5l"/>
+                        <outlet property="redButton" destination="7gh-yb-HNR" id="WwL-Qr-MmI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
